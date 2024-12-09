@@ -4,15 +4,30 @@
 valores são negativos, escrevendo esta informação. */
 
 int main(){
-    int i, j, negativ;
-        for(i=0;i<=5;i++){
+    int i, j, negativ, reset;
+    while(reset != 0){
+        for(i=0;i<5;i++){
             scanf("%d", &j);
             if (j < 0)
             {
                 negativ++;
             }
         }
-        printf("%d", negativ);
+        
+        if (negativ == 1)
+        {
+            printf("Voce digitou %d valor negativo\n\n", negativ);
+        } else if (negativ == 0)
+        {
+            printf("Voce nauum digitou nenhum valor negativo\n\n", negativ);
+        } else {
+            printf("Voce digitou %d valores negativos\n\n", negativ);
+        }
+
+        negativ = 0;
+        printf("Gostaria de repetir?\n Digite qualquer numero se sim, e 0 para finalizar.\n");
+        scanf("%d", &reset);
+    }
     return 0;
 }
  
