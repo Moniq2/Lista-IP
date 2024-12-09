@@ -5,6 +5,8 @@ valores são negativos, escrevendo esta informação. */
 
 int main(){
     int i, j, negativ, reset;
+    negativ = 0;
+
     while(reset != 0){
         for(i=0;i<5;i++){
             scanf("%d", &j);
@@ -19,8 +21,9 @@ int main(){
             printf("Voce digitou %d valor negativo\n\n", negativ);
         } else if (negativ == 0)
         {
-            printf("Voce nauum digitou nenhum valor negativo\n\n", negativ);
-        } else {
+            printf("Voce nauum digitou nenhum valor negativo\n\n");
+        } else 
+        {
             printf("Voce digitou %d valores negativos\n\n", negativ);
         }
 
