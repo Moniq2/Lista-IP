@@ -6,8 +6,8 @@ valores são negativos, escrevendo esta informação. */
 int main(){
     int i, j, negativ, reset;
     negativ = 0;
-
     while(reset != 0){
+        printf("Digite 5 numeros\n");
         for(i=0;i<5;i++){
             scanf("%d", &j);
             if (j < 0)

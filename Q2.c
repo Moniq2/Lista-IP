@@ -3,11 +3,17 @@
 3 centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão
 necessários para que Zé seja maior que Chico.*/
 int main(){
-    float chico, ze, anos;
-    while (chico!=ze)
+    int chico, ze, anos;
+    chico = 150;
+    ze = 110;
+    anos = 0;
+    while (chico > ze)
     {
-       
+        printf("%d %d\n", chico, ze);
+       chico += 2;
+       ze += 3;
+       anos++;
     }
-    
+    printf("Seraum necessarios %d anos", anos);
     return 0;
 }
