@@ -3,28 +3,28 @@
 /* 3. Escreva um algoritmo que leia 50 valores e encontre o maior e o menor deles. Mostre o  resultado. 
  */
 
-int main(){
-    int num, maior, menor;
-    menor = 0;
-    maior = 0;
-    for (int i = 0; i <= 5; i++)
+int main()
+{
+    int i, maior, menor, valor;
+    printf("Digite os 50 valores\n");
+    scanf("%d", &maior);
+    menor = maior;
+
+    for (i = 1; i < 50; i++)
     {
-        scanf("%d", &num); 
+        scanf("%d", &valor);
 
-        if (num > maior)
+        if (valor > maior)
         {
-           maior = num;
-        } 
-
-         menor = maior;
-         
-         if (num < menor)
+            maior = valor;
+        }
+        if (valor < menor)
         {
-           menor = num;
+            menor = valor;
         }
     }
-    
-    printf("O maior numero eh %d e o menor numero eh %d", maior, menor);
-    
+
+    printf("O maior valor e: %d, e o menor valor e %d\n", maior, menor);
+
     return 0;
 }
