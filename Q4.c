@@ -5,7 +5,7 @@ seguir. Para cada número lido, mostre uma tabela contendo o valor lido e o fato
 valor. */
 
 int main(){
-    int n, num, fator;
+    int n, num, fatorial;
     printf("Digite quantos numeros vc deseja calcular o fatorial\n");
     scanf("%d", &n);
 
@@ -14,14 +14,14 @@ int main(){
         printf("\n");
         scanf("%d", &num);
 
-        fator = num;
+        fatorial = num;
 
         /* Calcular fatorial */
-        for (int i = num - 1; i > 0; i--)
+        for (int j = num - 1; j > 0; j--)
         {
-            fator *= i ;
+            fatorial *= j;
         }
-        printf("numero: \t fatorial: \n %d \t\t %d", num, fator);
+        printf("numero: \t fatorial: \n %d \t\t %d", num, fatorial);
     }
 
 
