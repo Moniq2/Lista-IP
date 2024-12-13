@@ -8,18 +8,24 @@
 ... */ 
 
 int main(){
-    int num, repetir;
+    int num, repetir, a, b;
     repetir = 1;
     while (repetir == 1)
     {
-    print("Digite um numero:");
-    scanf("%d", num);
-    for (int i = 0; i < num; i++)
+    b = 1;
+    printf("Digite um numero:");
+    scanf("%d", &num);
+    for (int i = 2; i < num + 2; i++)
     {
-        for (int j = 0; j <= i; j++)
+        a = 0;
+        for (int j = 1; j <= i; j++)
         {
-            
-        }
+            printf("%d", b);
+            a += b + b;
+            printf("%d", a);
+        } 
+        b++;
+        printf("\n");
         
     }
     
