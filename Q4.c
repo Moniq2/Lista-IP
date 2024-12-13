@@ -5,13 +5,15 @@ seguir. Para cada número lido, mostre uma tabela contendo o valor lido e o fato
 valor. */
 
 int main(){
-    int n, num, fatorial;
-    printf("Digite quantos numeros vc deseja calcular o fatorial\n");
+    int n, num, fatorial, repetir;
+    repetir = 1;
+    while(repetir == 1){
+    printf("Digite a quantidade de numeros para os quais vc deseja calcular o fatorial:\n");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
     {
-        printf("\n");
+        printf("Digite o numero para o qual vc deseja calcular o fatorial:\n");
         scanf("%d", &num);
 
         fatorial = num;
@@ -21,9 +23,11 @@ int main(){
         {
             fatorial *= j;
         }
-        printf("numero: \t fatorial: \n %d \t\t %d", num, fatorial);
+        printf("numero: \t fatorial: \n %d \t\t %d\n", num, fatorial);
     }
-
+        printf("Gostaria de repetir?\n Digite 1 se sim, e 0 para finalizar.\n");
+        scanf("%d", &repetir);
+    }
 
     
     return 0;

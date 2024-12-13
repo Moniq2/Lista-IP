@@ -5,14 +5,15 @@
 necessários para que Zé seja maior que Chico.*/
 
 int main(){
-    int chico, ze, anos;
-    chico = 150;
-    ze = 110;
+    float chico, ze;
+    int anos;
+    chico = 1.5;
+    ze = 1.1;
     anos = 0;
     while (chico > ze)
     {
-       chico += 2;
-       ze += 3;
+       chico += 0.02;
+       ze += 0.03;
        anos++;
     }
     printf("Seraum necessarios %d anos", anos);
