@@ -8,7 +8,7 @@
 ... */ 
 
 int main(){
-    int num, repetir, a, b;
+    int num, repetir;
     repetir = 1;
     while (repetir == 1)
     {

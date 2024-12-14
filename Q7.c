@@ -5,8 +5,7 @@ Ex.: 0 1 1 2 3 5 8... Se o usuário digitar 4 o elemento da 4ª posição é o 2
 
 int main(){
     int n, termoAnt, termoAtual, proxTermo, repetir;
-    repetir = 1;
-    while(repetir == 1){
+    do{
         proxTermo = 0;
         termoAnt = 0;
         termoAtual = 1;
@@ -29,6 +28,6 @@ int main(){
         }
         printf("Deseja fazer novamente? Digite 1 se sim, 0 se nao: \n");
         scanf("%d", &repetir);
-    }
+    } while(repetir == 1);
     return 0;
 }

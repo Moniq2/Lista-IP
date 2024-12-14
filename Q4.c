@@ -6,8 +6,7 @@ valor. */
 
 int main(){
     int n, num, fatorial, repetir;
-    repetir = 1;
-    while(repetir == 1){
+    do{
     printf("Digite a quantidade de numeros para os quais vc deseja calcular o fatorial:\n");
     scanf("%d", &n);
 
@@ -27,7 +26,7 @@ int main(){
     }
         printf("Gostaria de repetir?\n Digite 1 se sim, e 0 para finalizar.\n");
         scanf("%d", &repetir);
-    }
+    } while(repetir == 1);
 
     
     return 0;

@@ -5,15 +5,13 @@
 
 int main()
 {   int i, maior, menor, valor, repetir;
-    repetir = 1;
-    while (repetir == 1)
-    {
+    do{
     
     printf("Digite os 50 valores\n");
     scanf("%d", &maior);
     menor = maior;
 
-        for (i = 1; i < 50; i++)
+        for (i = 1; i < 5; i++)
         {
         scanf("%d", &valor);
 
@@ -28,6 +26,6 @@ int main()
     }
     printf("O maior valor e: %d, e o menor valor e %d\n\n Deseja repetir? Digite 1 se sim e qualquer numero para finalizar \n", maior, menor);
     scanf("%d", &repetir);
-    }
+    } while (repetir == 1);
     return 0;
 }

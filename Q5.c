@@ -4,8 +4,7 @@
  */
 int main(){
     int num, numIntervalo, numFintervalo, repetir;
-    repetir = 1;
-    while(repetir == 1){
+    do{
     numFintervalo = numIntervalo = 0; 
     printf("Digite 10 numeros: \n");
     for (int i = 0; i < 10; i++)
@@ -21,7 +20,7 @@ int main(){
     }
     printf("Ha %d numeros entre 10 e 20, \nHa %d numeros fora desse intervalo.\n\nDeseja fazer novamente? Se sim, digite 1, se quiser finalizar, digite 0.\n", numIntervalo, numFintervalo);
     scanf("%d", &repetir);
-    }
+    } while(repetir == 1);
     return 0;
     
 }
