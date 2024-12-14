@@ -8,7 +8,7 @@ int main(){
     while(repetir == 1){
     numFintervalo = numIntervalo = 0; 
     printf("Digite 10 numeros: \n");
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 10; i++)
     {
         scanf("%d", &num);
         if (num >=10 && num <=20)
