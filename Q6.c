@@ -12,19 +12,14 @@ int main(){
     repetir = 1;
     while (repetir == 1)
     {
-    b = 1;
-    printf("Digite um numero:");
+    printf("Digite um numero: \n");
     scanf("%d", &num);
-    for (int i = 2; i < num + 2; i++)
+    for (int i = 1; i <= num; i++)
     {
-        a = 0;
         for (int j = 1; j <= i; j++)
         {
-            printf("%d", b);
-            a += b + b;
-            printf("%d", a);
+            printf("%d ", i * j);
         } 
-        b++;
         printf("\n");
         
     }
